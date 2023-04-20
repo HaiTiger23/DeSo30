@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="8">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Đặt vé máy bay"
+        android:gravity="center"
+        android:textSize="32dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Nơi đi:"
+            android:textStyle="italic|bold"
+            android:gravity="center|start"
+            android:textSize="24dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            >
+            <EditText
+                android:id="@+id/edt_di"
+                android:hint="Brussels (BRU)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Nơi đến:"
+            android:textStyle="italic|bold"
+            android:gravity="center|start"
+            android:textSize="24dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            >
+            <EditText
+                android:id="@+id/edt_den"
+                android:hint="Hanoi (HAN)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Số lượng:"
+            android:textStyle="italic|bold"
+            android:gravity="center|start"
+            android:textSize="24dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            >
+            <EditText
+                android:id="@+id/edt_sl"
+                android:hint="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Hình thức thanh toán:"
+            android:gravity="start"
+            android:textSize="24dp"/>
+        <RadioGroup
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            >
+            <RadioButton
+                android:id="@+id/rb_1c"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Một chiều"/>
+            <RadioButton
+                android:id="@+id/rb_2c"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Khứ hồi"/>
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Hạng thương gia:"
+            android:gravity="start"
+            android:textSize="24dp"/>
+        <RadioGroup
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            >
+           <CheckBox
+               android:id="@+id/cb_tg"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="BusinessClass"
+               android:checked="true"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:backgroundTint="#3333"
+            android:text="nhập liệu / Hiển thị"/>
+        <Button
+            android:id="@+id/btn_nhaplai"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:backgroundTint="#3333"
+            android:text="Nhập lại"/>
+
+    </LinearLayout>
+
+    
+</LinearLayout>
